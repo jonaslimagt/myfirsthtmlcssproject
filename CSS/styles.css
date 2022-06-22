@@ -87,15 +87,6 @@ body {
     text-decoration: none;
 }
 
-.container .rightside {
-    flex: 1;
-    background-image: url(../Assets/Jonas\ Sword\ No\ Background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
 .container .leftside .info a.a2 {
     display: inline-block;
     background-color: #26338C;
@@ -119,12 +110,15 @@ body {
 
 .container .rightside {
     flex: 1;
-    background-image: url(../Assets/Jonas\ Sword\ No\ Background.png);
-    background-size: 100% auto;
-    background-position: center bottom;
-    height: 100vh;
 }
 
+.container .rightside .image-background {
+    background-image: url(../Assets/Jonas\ Sword\ No\ Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+}
 
 footer {
     color: #88E0EF;
@@ -135,4 +129,119 @@ footer {
     right: 0;
     bottom: 0;
     padding: 20px 60px;
+}
+
+@media (min-width: 691px) and (max-width: 960px) {
+    header {
+        position: initial;
+        background-color: #161E54;
+    }
+
+    .container {
+        flex-direction: column;
+        height: calc(100vh - 436px);
+    }
+
+    .container .leftside {
+        /*flex: content;*/
+        justify-content: center;
+        padding: 30px 60px;
+        text-align: center;
+    }
+
+    .container .leftside .buttom {
+        text-align: center;
+    }
+
+    .container .rightside .image-background {
+        background-size: 80%;
+        background-position: center top;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 690px) {
+    header {
+        position: initial;
+        background-color: #161E54;
+    }
+
+    .container {
+        flex-direction: column;
+        height: calc(100vh - 436px);
+    }
+
+    .container .leftside {
+        /*flex: content;*/
+        justify-content: center;
+        padding: 30px 60px;
+        text-align: center;
+    }
+
+    .container .leftside .info .subtitle {
+        font-size: 48px;
+    }
+
+    .container .leftside .buttom a {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container .rightside .image-background {
+        background-size: 80%;
+        background-position: center top;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        position: initial;
+        background-color: #161E54;
+    }
+
+    .container {
+        flex-direction: column;
+        height: calc(100vh - 436px);
+    }
+
+    .container .leftside {
+        justify-content: center;
+        padding: 30px 60px;
+        text-align: center;
+    }
+
+    .container .leftside .info .name {
+        font-size: 18px;
+    }
+    
+    .container .leftside .info .subtitle {
+        font-size: 28px;
+    }
+
+    .container .leftside .buttom a {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .container .leftside .buttom a.a2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .container .rightside .image-background {
+        background-size: 80%;
+        background-position: center top;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
