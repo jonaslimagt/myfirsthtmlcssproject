@@ -8,3 +8,6 @@ Only grammar corrections in the README.txt file.
 
 ::Version 1.2::
 Adding new div in the image background to make it easier to handle and edit and removal of redundant CSS structures. Implemented responsiveness for mobile screens (cell phones and tablets).
+
+::Version 1.3::
+Correcting errors and bugs in the background's image in the responsiveness.
