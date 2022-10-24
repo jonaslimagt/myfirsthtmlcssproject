@@ -11,3 +11,6 @@ Adding new div in the image background to make it easier to handle and edit and 
 
 ::Version 1.3::
 Correcting errors and bugs in the background's image in the responsiveness.
+
+::Version 1.4:: 
+Adding Favicon to the project.
